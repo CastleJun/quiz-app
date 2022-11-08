@@ -1,5 +1,7 @@
 import { AxiosRequestConfig } from 'axios';
 
+import { shuffle } from '@/utils/util';
+
 import { axiosInstance } from './axios-instance';
 
 export interface Question {
@@ -45,7 +47,7 @@ export const getManyQuestions = {
       return {
         id: index + 1,
         ...question,
-        question_answers: [question.correct_answer, ...question.incorrect_answers],
+        question_answers: shuffle([question.correct_answer, ...question.incorrect_answers]),
       };
     });
   },
