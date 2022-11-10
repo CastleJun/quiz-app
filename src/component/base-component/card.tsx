@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { UserAnswer } from '@/App';
+import { UserAnswer } from '@/page/home/Home';
 import { colors } from '@/styles/colors';
 import { fontSize } from '@/styles/typography';
 import { clickExample, ClickExampleProps, PlainButton } from '@/utils/css.util';
