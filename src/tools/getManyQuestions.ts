@@ -42,7 +42,7 @@ export const getManyQuestions = {
   ): Promise<GetManyQuestionsResBody[]> {
     const { data }: Res = await axiosInstance.get(this.url, { params: query, ...config });
 
-    return data?.results.map((question: Question, index) => {
+    return data?.results?.map((question: Question, index) => {
       return {
         id: index + 1,
         ...question,
