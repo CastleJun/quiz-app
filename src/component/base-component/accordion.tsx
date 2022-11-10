@@ -63,6 +63,7 @@ const DivWrap = styled.div`
 
   margin-bottom: 16px;
   min-width: 380px;
+  max-width: 380px;
 `;
 
 const HeaderWrap = styled.div`
