@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Accordion from '@/component/base-component/accordion';
-import { UserAnswer } from '@/page/home/Home';
+import { UserAnswer } from '@/page/home/Home.tsx';
 import { colors } from '@/styles/colors';
 import { fontSize, fontWeight } from '@/styles/typography';
 import { preventBlueHighlight } from '@/utils/css.util';
