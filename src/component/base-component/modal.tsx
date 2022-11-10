@@ -41,4 +41,5 @@ const ContentModalWrap = styled.div`
   border-top-right-radius: 15px;
   margin: 0 auto;
   background-color: ${colors.white};
+  max-width: 480px;
 `;

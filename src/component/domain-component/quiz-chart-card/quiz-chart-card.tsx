@@ -56,7 +56,7 @@ const QuizChartCard: React.FC<Props> = (props) => {
       </QuizInformationWrap>
 
       <RetryQuizButtonWrap onClick={onRetryQuizClick}>다시풀기</RetryQuizButtonWrap>
-      <InCorrectViewLinkWrap href="/note">틀린문제 보기</InCorrectViewLinkWrap>
+      <InCorrectViewLinkWrap to="/note">틀린문제 보기</InCorrectViewLinkWrap>
     </DivWrap>
   );
 };

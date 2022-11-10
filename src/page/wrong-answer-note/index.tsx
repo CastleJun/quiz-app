@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import Accordion from '@/component/base-component/accordion';
 import { UserAnswer } from '@/page/home/Home';
 import { colors } from '@/styles/colors';
 import { fontSize, fontWeight } from '@/styles/typography';
+import { preventBlueHighlight } from '@/utils/css.util';
 import { getStorageItem } from '@/utils/storage';
 
 const WrongAnswerNote = (): React.ReactElement => {
@@ -29,6 +31,7 @@ const WrongAnswerNote = (): React.ReactElement => {
           </Accordion>
         );
       })}
+      <HomeLinkWrap to="/">홈으로 가기</HomeLinkWrap>
     </DivWrap>
   );
 };
@@ -68,4 +71,17 @@ const CorrectAnswerWrap = styled.p`
   font-size: ${fontSize.M4};
   color: ${colors.primary500};
   margin-left: 4px;
+`;
+
+export const HomeLinkWrap = styled(Link)`
+  ${preventBlueHighlight};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  padding: 10px 20px;
+  color: ${colors.white};
+  border: 1px solid ${colors.primary500};
+  background-color: ${colors.primary500};
 `;

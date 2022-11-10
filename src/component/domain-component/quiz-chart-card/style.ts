@@ -1,4 +1,5 @@
 import { Pie } from 'react-chartjs-2';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { colors } from '@/styles/colors';
@@ -36,7 +37,7 @@ export const RetryQuizButtonWrap = styled(PlainButton)`
   color: ${colors.white};
 `;
 
-export const InCorrectViewLinkWrap = styled.a`
+export const InCorrectViewLinkWrap = styled(Link)`
   ${preventBlueHighlight};
   display: flex;
   align-items: center;
