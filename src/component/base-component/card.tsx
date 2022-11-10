@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { UserAnswer } from '@/page/home/Home.tsx';
-import { colors } from '@/styles/colors';
-import { fontSize } from '@/styles/typography';
-import { clickExample, ClickExampleProps, PlainButton } from '@/utils/css.util';
+import { UserAnswer } from '../../page/home/Home';
+import { colors } from '../../styles/colors';
+import { fontSize } from '../../styles/typography';
+import { clickExample, ClickExampleProps, PlainButton } from '../../utils/css.util';
 
 interface Props {
   question: string;

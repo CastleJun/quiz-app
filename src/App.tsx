@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from '@/page/home/Home.tsx';
-import WrongAnswerNote from '@/page/wrong-answer-note/index.tsx';
+import { Home } from './page/home/Home';
+import { WrongAnswerNote } from './page/wrong-answer-note';
 
 const App = () => {
   return (

@@ -1,10 +1,9 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
 import React from 'react';
 
-import { colors } from '@/styles/colors';
-import { getStorageItem } from '@/utils/storage';
-import { msToTime } from '@/utils/time.util';
-
+import { colors } from '../../../styles/colors';
+import { getStorageItem } from '../../../utils/storage';
+import { msToTime } from '../../../utils/time.util';
 import {
   DivWrap,
   InCorrectViewLinkWrap,

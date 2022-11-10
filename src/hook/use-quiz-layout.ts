@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { TOTAL_QUESTION } from '@/constant/static.config';
-import { UserAnswer } from '@/page/home/Home';
-import { Api } from '@/tools/api';
-import { GetManyQuestionsResBody } from '@/tools/getManyQuestions';
-import { clearStorage, setStorageItem } from '@/utils/storage';
-import { shuffle } from '@/utils/util';
+import { TOTAL_QUESTION } from '../constant/static.config';
+import { UserAnswer } from '../page/home/Home';
+import { Api } from '../tools/api';
+import { GetManyQuestionsResBody } from '../tools/getManyQuestions';
+import { clearStorage, setStorageItem } from '../utils/storage';
+import { shuffle } from '../utils/util';
 
 export const useQuizLayout = () => {
   const [questions, setQuestions] = useState<GetManyQuestionsResBody[]>();

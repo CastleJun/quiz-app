@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-import { LETTER_BOX_MAX_VIEW_WIDTH_AS_STRING } from '@/constant/static.config';
-import { colors } from '@/styles/colors';
-import { fontSize } from '@/styles/typography';
-import { PlainButton } from '@/utils/css.util';
+import { LETTER_BOX_MAX_VIEW_WIDTH_AS_STRING } from '../../constant/static.config';
+import { colors } from '../../styles/colors';
+import { fontSize } from '../../styles/typography';
+import { PlainButton } from '../../utils/css.util';
 
 export const DivWrap = styled.div`
   width: 100%;

@@ -2,9 +2,9 @@ import { Pie } from 'react-chartjs-2';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import { colors } from '@/styles/colors';
-import { fontSize, fontWeight } from '@/styles/typography';
-import { PlainButton, preventBlueHighlight } from '@/utils/css.util';
+import { colors } from '../../../styles/colors';
+import { fontSize, fontWeight } from '../../../styles/typography';
+import { PlainButton, preventBlueHighlight } from '../../../utils/css.util';
 
 export const DivWrap = styled.div``;
 export const PieChartWrap = styled(Pie)`

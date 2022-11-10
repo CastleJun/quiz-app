@@ -1,7 +1,6 @@
 import { AxiosRequestConfig } from 'axios';
 
-import { shuffle } from '@/utils/util';
-
+import { shuffle } from '../utils/util';
 import { axiosInstance } from './axios-instance';
 
 export interface Question {

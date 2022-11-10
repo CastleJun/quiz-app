@@ -1,12 +1,11 @@
 import React from 'react';
 
-import Card from '@/component/base-component/card';
-import { Loading } from '@/component/base-component/loading';
-import Modal from '@/component/base-component/modal';
-import QuizChartCard from '@/component/domain-component/quiz-chart-card/quiz-chart-card';
-import { TOTAL_QUESTION } from '@/constant/static.config';
-import { useQuizLayout } from '@/hook/use-quiz-layout';
-
+import Card from '../../component/base-component/card';
+import { Loading } from '../../component/base-component/loading';
+import Modal from '../../component/base-component/modal';
+import QuizChartCard from '../../component/domain-component/quiz-chart-card/quiz-chart-card';
+import { TOTAL_QUESTION } from '../../constant/static.config';
+import { useQuizLayout } from '../../hook/use-quiz-layout';
 import { ContentModalWrap, DivWrap, LoadingWrap, NextQuestionButtonWrap, StartButtonWrap, TitleWrap } from './style';
 
 export interface UserAnswer {
@@ -16,7 +15,7 @@ export interface UserAnswer {
   isCorrect: boolean;
 }
 
-const Home = (): React.ReactElement => {
+export const Home = (): React.ReactElement => {
   const {
     isCorrect,
     questions,
@@ -65,5 +64,3 @@ const Home = (): React.ReactElement => {
     </DivWrap>
   );
 };
-
-export default Home;

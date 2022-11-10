@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-import Accordion from '@/component/base-component/accordion';
-import { UserAnswer } from '@/page/home/Home.tsx';
-import { colors } from '@/styles/colors';
-import { fontSize, fontWeight } from '@/styles/typography';
-import { preventBlueHighlight } from '@/utils/css.util';
-import { getStorageItem } from '@/utils/storage';
+import Accordion from '../component/base-component/accordion';
+import { colors } from '../styles/colors';
+import { fontSize, fontWeight } from '../styles/typography';
+import { preventBlueHighlight } from '../utils/css.util';
+import { getStorageItem } from '../utils/storage';
+import { UserAnswer } from './home/Home';
 
-const WrongAnswerNote = (): React.ReactElement => {
+export const WrongAnswerNote = (): React.ReactElement => {
   const userAnswers: UserAnswer[] = JSON.parse(getStorageItem('answers') as string);
 
   const wrongAnswers = userAnswers.filter((item) => {
@@ -35,8 +35,6 @@ const WrongAnswerNote = (): React.ReactElement => {
     </DivWrap>
   );
 };
-
-export default WrongAnswerNote;
 
 const DivWrap = styled.div`
   display: flex;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { colors } from '@/styles/colors';
-import { fontSize, fontWeight } from '@/styles/typography';
-import { PlainButton } from '@/utils/css.util';
+import { colors } from '../../styles/colors';
+import { fontSize, fontWeight } from '../../styles/typography';
+import { PlainButton } from '../../utils/css.util';
 
 type Props = {
   title?: string | React.ReactNode;
