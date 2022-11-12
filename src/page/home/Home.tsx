@@ -36,7 +36,11 @@ export const Home = (): React.ReactElement => {
     <DivWrap>
       <TitleWrap>CLASSTING QUIZ APP</TitleWrap>
 
-      {!questions && <StartButtonWrap onClick={handleStartQuiz}>start</StartButtonWrap>}
+      {!questions && (
+        <StartButtonWrap title="start" onClick={handleStartQuiz}>
+          start
+        </StartButtonWrap>
+      )}
 
       {questions && haveQuestion && (
         <Card
